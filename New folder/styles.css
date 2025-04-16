@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Cambria', Caslon;
+  background: #fff0f5;
+  color: #333;
+  transition: background 0.5s;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+}
+
+.animated-text {
+  font-size: 3rem;
+  animation: fadeInUp 2s ease-in-out;
+  color: #b22222;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #8b0000;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+.hidden {
+  display: none;
+}
+
+.section {
+  padding: 3rem 2rem;
+  background: #fff0f5;
+  text-align: center;
+}
+
+.memory-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.memory-gallery img {
+  width: 100%; /* Ensures images fill the grid cell */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow around images */
+}
+
+
+
+.reasons {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #d6336c;
+}
+
+textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 2px solid #d6336c;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #ffe4e1;
+  color: #8b0000;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
